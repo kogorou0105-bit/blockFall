@@ -1,10 +1,39 @@
 {
   "name": "blockfall",
   "version": "0.1.0",
-  "private": true,
+  "description": "Terminal Tetris built with TypeScript, Bun, OpenTUI, and React.",
   "type": "module",
   "bin": {
-    "blockfall": "./src/index.tsx"
+    "bf": "src/index.tsx",
+    "blockfall": "src/index.tsx"
+  },
+  "files": [
+    "src/game/game.ts",
+    "src/game/tetrominoes.ts",
+    "src/game/types.ts",
+    "src/index.tsx",
+    "src/ui/App.tsx",
+    "src/ui/theme.ts",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kogorou0105-bit/blockFall.git"
+  },
+  "keywords": [
+    "tetris",
+    "terminal",
+    "tui",
+    "opentui",
+    "bun",
+    "react"
+  ],
+  "license": "MIT",
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "start": "bun run src/index.tsx",

@@ -4,6 +4,17 @@ Terminal Tetris built with TypeScript, Bun, OpenTUI, and React.
 
 ## Commands
 
+Install from npm:
+
+```sh
+npm install -g blockfall
+bf
+```
+
+Blockfall runs on Bun, so `bun` must be available in your `PATH`.
+
+Run from source:
+
 ```sh
 bun install
 bun run play
@@ -13,7 +24,7 @@ To install the local CLI command:
 
 ```sh
 bun link
-blockfall
+bf
 ```
 
 ## Controls
