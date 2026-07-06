@@ -2,6 +2,20 @@
 
 Terminal Tetris built with TypeScript, Bun, OpenTUI, and React.
 
+## Prerequisites
+
+Blockfall runs on Bun. Install Bun first:
+
+```sh
+curl -fsSL https://bun.sh/install | bash
+```
+
+Make sure `bun` is available in your `PATH`:
+
+```sh
+bun --version
+```
+
 ## Commands
 
 Install from npm:
@@ -11,7 +25,17 @@ npm install -g blockfall
 bf
 ```
 
-Blockfall runs on Bun, so `bun` must be available in your `PATH`.
+If your default npm registry is not the public npm registry, install with:
+
+```sh
+npm install -g blockfall --registry=https://registry.npmjs.org
+```
+
+Or switch your npm registry globally:
+
+```sh
+npm config set registry https://registry.npmjs.org
+```
 
 Run from source:
 
